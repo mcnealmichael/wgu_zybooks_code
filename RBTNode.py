@@ -51,4 +51,23 @@ class RBTNode:
         if grandparent.left is self.parent:
             return grandparent.right
         return grandparent.left
-    
+
+    def get_sibling(self):
+        if self.parent != None:
+            if self is self.parent.left:
+                return self.parent.right
+            return self.parent.left
+        return None
+
+    def get_predecessor(self):
+        node = self.left
+        while node.right != None:
+            node = node.right
+        return node
+
+    def are_both_children_black(self):
+        if self.left != None and self.left.is_red():
+            return False
+        if self.right != None and self.right.is_red():
+            return False
+        return True

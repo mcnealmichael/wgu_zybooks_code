@@ -1,5 +1,5 @@
-from AVLNode import AVLNode
-from AVLPrint import AVLPrint
+from LAB_AVLTree.AVLNode import AVLNode
+from LAB_AVLTree.AVLPrint import AVLPrint
 
 class AVLTree:
     def __init__(self):

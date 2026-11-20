@@ -1,4 +1,4 @@
-from AVLTree import AVLTree
+from LAB_AVLTree.AVLTree import AVLTree
 
 # Declare keys to insert and keys to subsequently remove
 keys_to_insert = [10, 20, 5, 22, 15, 47, 19, 3, 12, 18]

@@ -1,5 +1,5 @@
-from RBTNode import RBTNode
-from RBTree import RBTree
+from LABRBTree.RBTNode import RBTNode
+from LABRBTree.RBTree import RBTree
 
 # Declare keys to insert and keys to subsequently remove
 keys_to_insert = [ 10, 20, 5, 22, 15, 47, 19, 3, 12, 18 ]

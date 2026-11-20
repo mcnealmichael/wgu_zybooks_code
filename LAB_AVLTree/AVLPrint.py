@@ -1,4 +1,4 @@
-from AVLNode import AVLNode
+from LAB_AVLTree.AVLNode import AVLNode
 
 class AVLPrint:
     @staticmethod

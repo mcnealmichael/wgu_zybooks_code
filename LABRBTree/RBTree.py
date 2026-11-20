@@ -1,4 +1,4 @@
-from RBTNode import RBTNode
+from LABRBTree.RBTNode import RBTNode
 
 class RBTree:
     # Constructor to create an RBTree

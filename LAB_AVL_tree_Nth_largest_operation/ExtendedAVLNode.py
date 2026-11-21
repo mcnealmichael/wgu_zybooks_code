@@ -27,4 +27,13 @@ class ExtendedAVLNode(AVLNode):
         else:
             right_count = 0
 
-        self.subtree_key_count = left_count + right_count + 1
+        self.subtree_key_count = 1 + left_count + right_count
+
+    # Override the set_left() to use the update_subtree_key_count()
+    def set_left(self, new_left_child):
+        super().set_left(new_left_child)
+        self.update_subtree_key_count()
+
+    def set_right(self, new_right_child):
+        super().set_right(new_right_child)
+        self.update_subtree_key_count()
